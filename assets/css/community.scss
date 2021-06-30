@@ -1,0 +1,30 @@
+.community_list{
+  .community{
+    display:inline-block;
+    vertical-align: top;
+    max-width:210px;
+    min-height:230px;
+    margin:10px;
+    border-radius: 5px;
+    border: solid thin #dddddd;
+    list-style: none;
+    .com_img{
+      border-radius: 0px;
+      width: 210px;
+      height: 120px;
+      object-fit: cover;
+    }
+    .title_show_cover{
+      margin:5px;
+      .title_show{
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        font-size: 16px;
+        font-weight: bold;
+        color: #28689f;
+      }
+    }
+  }
+}

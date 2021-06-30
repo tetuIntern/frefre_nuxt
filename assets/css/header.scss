@@ -1,0 +1,29 @@
+.frefre_header {
+  header{
+    background-color:#66bfbf!important;
+    .title{
+      font-weight:bold;
+      font-size:36px;
+      color:white;
+    }
+    .header_icon{
+      .v-btn__content{
+        justify-content: flex-end;
+        color: white;
+      }
+      .text{
+        display:inline-block;
+        color:white;
+        font-weight: bold;
+        font-size: 20px;
+        vertical-align: middle;
+        .jp{
+          font-size:12px;
+        }
+        .en{
+          font-size:16px;
+        }
+      }
+    }
+  }
+}
