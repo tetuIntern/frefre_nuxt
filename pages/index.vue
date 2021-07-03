@@ -1,17 +1,17 @@
 <template>
   <div class='community_list'>
-    <nuxt-link v-for='(com, i) in community' :index='i'class="community"to="/FreFre">
-     <img class="com_img"v-bind:src='com.img'>
-     <div class="title_show_cover">
-       <div class="title_show">{{com.jp}}</div>
-       <div class="title_show">{{com.en}}</div>
-     </div>
+    <nuxt-link v-for='(com, i) in community' :index='i':to="'/community/'+i">
+      <community-page :com="com"></community-page>
     </nuxt-link>
   </div>
 </template>
 
 <script>
+import CommunityPage from '@/pages/communities.vue';
 export default {
+  components:{
+    CommunityPage
+  },
   data(){
     return{
       community:[
